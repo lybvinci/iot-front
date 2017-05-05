@@ -3,25 +3,23 @@
        <div class="logo">
           <a href="http://localhost:8080/#/home">Link every things</a>
        </div>
-       <div class="nav">
-         <ul>
-           <li class="selected">
-             <a href="/">首页</a>
-           </li>
-           <li>
-             <a href="/developer">开发者</a>
-           </li>
-           <li>
-             <a href="/developer">探索</a>
-           </li>
-           <li>
-             <a href="/developer">博客</a>
-           </li>
-           <li>
-             <a href="/developer">联系我们</a>
-           </li>
-         </ul>
-       </div>
+       <ul class="nav">
+         <li class="selected">
+           <a href="/">首页</a>
+         </li>
+         <li>
+           <a href="/developer">开发者</a>
+         </li>
+         <li>
+           <a href="/developer">探索</a>
+         </li>
+         <li>
+           <a href="/developer">博客</a>
+         </li>
+         <li>
+           <a href="/developer">联系我们</a>
+         </li>
+       </ul>
     </div>
 </template>
 
@@ -45,11 +43,11 @@ export default {
     display: flex;
     position:fixed;
 }
-#header#logo {
+.logo {
     width:230px;
     justify-content:flex-start;
 }
-nav {
+.nav {
     justify-content:flex-end;
     list-style-type:none;
     margin:0;
