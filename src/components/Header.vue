@@ -41,6 +41,7 @@ export default {
 <style scoped>
 #header {
     display: flex;
+    background-color: #2196f3;
     position:fixed;
     left: 0px;    
     top: 5px;
