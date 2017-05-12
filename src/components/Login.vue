@@ -5,15 +5,20 @@
     <p> Connect the every things </p>
     </div>
     <form class="login" v-on:submit.prevent="submit">
+      <div class="wrapContent">
         <div class="line">
             <div v-show="btn && !form.id">id不能为空</div>
-            <input type="number" placeholder="输入你的id" v-model="form.id">
-        </div>
-        <div class="line">
+            <input placeholder="输入你的用户名" size="30" v-model="form.id">
+          </div>
+          <div class="line">
             <div v-show="btn && !form.name">用户名不能为空</div>
-            <input type="text" placeholder="输入你的用户名" v-model="form.name">
+            <input type="password" placeholder="输入你的密码" v-model="form.name">
         </div>
         <button>登录</button>
+      </div>
+      <div class="wrapContent">
+        <p>简介。。。</p>
+      </div>
     </form>
   </div>
 </template>
@@ -68,18 +73,30 @@ p {
 }
 .login {
     padding: 50px;
+    display: flex;
     text-align: center;
+    background-color: #BBDEFB;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.3);
     .line {
         padding: 5px;
-        input {
-            padding: 0 10px;
-            line-height: 28px;
-        }
     }
-    button {
-        padding: 0 20px;
-        margin-top: 20px;
-        line-height: 28px;
-    }
+}
+button {
+    padding: 0 20px;
+    margin-top: 20px;
+    line-height: 28px;
+}
+input {
+    padding: 0 10px;
+    line-height: 28px;
+    outline: none;
+    width: 210px;
+    border: 0px;
+    background-color: #BBDEFB;
+    border-bottom: #009688 1px solid;
+    margin: 10px;
+}
+.wrapContent {
+    flex: 1;
 }
 </style>
